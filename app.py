@@ -2,7 +2,9 @@ import os
 import sys
 import json
 from datetime import datetime
-
+import wolframalpha
+# app_id='835998086766703'
+# client = wolframalpha.Client(app_id)
 import requests
 from flask import Flask, request
 
@@ -40,7 +42,8 @@ def webhook():
                     sender_id = messaging_event["sender"]["id"]        # the facebook ID of the person sending you the message
                     recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                     message_text = messaging_event["message"]["text"]  # the message's text
-                    # res = client.query(message_text)
+                    log("receive message from {sender_id}: {message_text}".format(sender_id=sender_id, message_text=message_text))
+
                     try:
                         response="hellllllllllo"
                     except:
@@ -92,7 +95,7 @@ def log(msg, *args, **kwargs):  # simple wrapper for logging to stdout on heroku
             msg = json.dumps(msg)
         else:
             msg = str(msg).format(*args, **kwargs)
-        print("{}: {}").format(datetime.now(), msg)
+        print("{} Logging: {}").format(datetime.now(), msg)
     except UnicodeEncodeError:
         pass  # squash logging errors in case of non-ascii text
     sys.stdout.flush()
