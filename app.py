@@ -2,9 +2,7 @@ import os
 import sys
 import json
 from datetime import datetime
-import wolframalpha
-# app_id='835998086766703'
-# client = wolframalpha.Client(app_id)
+
 import requests
 from flask import Flask, request
 
