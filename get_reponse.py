@@ -4,13 +4,13 @@ from wit import Wit
 
 
 def run(message_text = 'Hello world '):
-    with open (r'C:\Users\Administrator\Desktop\old_mess.txt',mode = "r+", encoding="utf-8") as f:
+    with open (r'old_mess.txt',mode = "r+", encoding="utf-8") as f:
         file = f.read()
 
         if file == message_text:
             return  
         else:
-            with open(r'C:\Users\Administrator\Desktop\old_mess.txt',mode = "w+", encoding="utf-8") as e:
+            with open(r'old_mess.txt',mode = "w+", encoding="utf-8") as e:
                 e.write(message_text)
     
     #gửi lên wit tìm nhận dạng
