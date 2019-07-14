@@ -5,6 +5,7 @@ from datetime import datetime
 
 import requests
 from flask import Flask, request
+from get_reponse import get_reponse
 
 app = Flask(__name__)
 
@@ -40,12 +41,12 @@ def webhook():
                     sender_id = messaging_event["sender"]["id"]        # the facebook ID of the person sending you the message
                     recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                     message_text = messaging_event["message"]["text"]  # the message's text
-                    log("receive message from {sender_id}: {message_text}".format(sender_id=sender_id, message_text=message_text))
+                    log("<>  Receive message \n o>>> {sender_id}  :  {message_text}".format(sender_id=sender_id, message_text=message_text))
 
                     try:
-                        response="hellllllllllo"
+                        response=get_reponse(message_text)
                     except:
-                        response=message_text
+                        response=get_reponse(message_text)
                     send_message(sender_id,response)
 
 
@@ -64,7 +65,7 @@ def webhook():
 
 def send_message(recipient_id, message_text):
 
-    log("sending message to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
+    log("<>  sending message \n  o>>> {recipient}   :   {text}".format(recipient=recipient_id, text=message_text))
 
     params = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
