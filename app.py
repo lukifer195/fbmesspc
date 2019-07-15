@@ -41,7 +41,7 @@ def webhook():
                     sender_id = messaging_event["sender"]["id"]        # the facebook ID of the person sending you the message
                     recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                     message_text = messaging_event["message"]["text"]  # the message's text
-                    log("<> Receive message  o>>> {sender_id}  :  {message_text}".format(sender_id=sender_id, message_text=message_text))
+#                     log("<> Receive message  o>>> {sender_id}  :  {message_text}".format(sender_id=sender_id, message_text=message_text))
 
                     try:
                         response=get_reponse(message_text)
@@ -65,7 +65,7 @@ def webhook():
 
 def send_message(recipient_id, message_text):
 
-    log(" Sending message  o>>> {recipient}   :   {text}".format(recipient=recipient_id, text=message_text))
+#     log(" Sending message  o>>> {recipient}   :   {text}".format(recipient=recipient_id, text=message_text))
 
     params = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
