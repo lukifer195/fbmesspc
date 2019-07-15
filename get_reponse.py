@@ -4,15 +4,6 @@ from wit import Wit
 
 
 def run(message_text = 'Hello world '):
-    with open (r'old_mess.txt',mode = "r+", encoding="utf-8") as f:
-        file = f.read()
-
-        if file == message_text:
-            return  
-        else:
-            with open(r'old_mess.txt',mode = "w+", encoding="utf-8") as e:
-                e.write(message_text)
-    
     #gửi lên wit tìm nhận dạng
     appID = "2312110155545084"
     ServerAccessToken = "STSHBSEWET4OGR3WUA5Y2UZLGB42KHVP"
@@ -39,8 +30,6 @@ def run(message_text = 'Hello world '):
     keylist = []
     list_reponse = []
     for key in list_keywords:                 # trượt key trong list keys
-        # print(key.values())
-
         Keyword = tuple(key.items())    # convert tuple cho tất cả item trong key
         keylist.append(Keyword)             
     keyset = set(keylist)   
@@ -62,7 +51,7 @@ def run(message_text = 'Hello world '):
 #                 print("KEYSET    :  ",keyset        )
 #                 print("ENTITY_SET:  ",entity_set    )
 #                 print(datalist.get('text')          )
-                print("DIFF      :  ",diff          )
+#                 print("DIFF      :  ",diff          )
 #                 print("lendiff   :  ",lendiff       )
                 return datalist.get('reponse')
             else:
@@ -79,7 +68,7 @@ def run(message_text = 'Hello world '):
                 diff = keyset ^ entity_set                          # ^ tìm thực thể (tuple) khác nhau giữa 2 set
                 lendiff = len(diff)
                 if lendiff == x :                                   # chạy len(diff) để tìm câu thiếu hoặc dư 1-4 thực thể
-                    print("DIFF      :  ",diff          )
+#                     print("DIFF      :  ",diff          )
                     return datalist.get('reponse')
                     # if datalist.get('reponse') != None:
 
@@ -90,6 +79,6 @@ def get_reponse(message_text):
     else:
         return a
 
-aa = get_reponse(' chào')
-print(aa)
+# aa = get_reponse(' chào')
+# print(aa)
 
