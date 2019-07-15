@@ -46,7 +46,7 @@ def webhook():
                     try:
                         response=get_reponse(message_text)
                     except:
-                        response=get_reponse(message_text)
+                        response= message_text
                     send_message(sender_id,response)
 
 
