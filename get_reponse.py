@@ -59,15 +59,15 @@ def run(message_text = 'Hello world '):
             diff = keyset ^ entity_set                          # ^ tìm thực thể (tuple) khác nhau giữa 2 set
             lendiff = len(diff)
             if lendiff == 0 :                                   # chạy len(diff) để tìm câu thiếu hoặc dư 1-4 thực thể
-                print("KEYSET    :  ",keyset        )
-                print("ENTITY_SET:  ",entity_set    )
-                print(datalist.get('text')          )
+#                 print("KEYSET    :  ",keyset        )
+#                 print("ENTITY_SET:  ",entity_set    )
+#                 print(datalist.get('text')          )
                 print("DIFF      :  ",diff          )
-                print("lendiff   :  ",lendiff       )
+#                 print("lendiff   :  ",lendiff       )
                 return datalist.get('reponse')
             else:
-                return "cảm ơn sự quan tâm của bạn"
-    if len(keyset) >  1:         
+                pass
+    if len(keyset) >=  1:         
         for x in range(0,4):
             for datalist in export.get('data'):
                 entities_list = (datalist.get('entities'))
@@ -79,12 +79,8 @@ def run(message_text = 'Hello world '):
                 diff = keyset ^ entity_set                          # ^ tìm thực thể (tuple) khác nhau giữa 2 set
                 lendiff = len(diff)
                 if lendiff == x :                                   # chạy len(diff) để tìm câu thiếu hoặc dư 1-4 thực thể
-                        print("KEYSET    :  ",keyset        )
-                        print("ENTITY_SET:  ",entity_set    )
-                        print(datalist.get('text')          )
-                        print("DIFF      :  ",diff          )
-                        print("lendiff   :  ",lendiff       )
-                        return datalist.get('reponse')
+                    print("DIFF      :  ",diff          )
+                    return datalist.get('reponse')
                     # if datalist.get('reponse') != None:
 
 def get_reponse(message_text):
