@@ -1,1 +1,1 @@
-web: gunicorn app:app --log-file=-
+fabot: gunicorn app:app --log-file=-
