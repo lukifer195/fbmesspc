@@ -1,42 +1,6 @@
 {
     "data": [
         {
-            "text": "xin chào",
-            "entities": [
-                {
-                    "entity": "Verb",
-                    "value": "chào"
-                }
-            ],
-            "reponse": "chào bạn"
-        },
-        {
-            "text": "xin chào shop cho mình hỏi shop có bán quần áo không",
-            "entities": [
-                {
-                    "entity": "Verb",
-                    "value": "chào"
-                },
-                {
-                    "entity": "Verb",
-                    "value": "hỏi"
-                },
-                {
-                    "entity": "Verb",
-                    "value": "bán"
-                },
-                {
-                    "entity": "Noun",
-                    "value": "quần áo"
-                },
-                {
-                    "entity": "Verb",
-                    "value": "hỏi"
-                }
-            ],
-            "reponse": "có chứ"
-        },
-        {
             "text": "chị có mẫu nào lớn hơn không",
             "entities": [
                 {
@@ -60,7 +24,7 @@
                     "value": "hỏi"
                 }
             ],
-            "reponse": "chờ mình xem đã"
+            "reponse": "có nhé em"
         },
         {
             "text": "có khuyến mãi k shop",
@@ -78,7 +42,7 @@
                     "value": "khuyến mãi"
                 }
             ],
-            "reponse": "không nhé"
+            "reponse": "hom nay không khuyến mãi"
         },
         {
             "text": "đang khuyến mãi mẫu nào v shop",
@@ -100,7 +64,7 @@
                     "value": "hỏi"
                 }
             ],
-            "reponse": "k nhé"
+            "reponse": "liên hệ trực tiếp "
         },
         {
             "text": "chị cho em xin số điện thoại liên lạc",
@@ -118,7 +82,7 @@
                     "value": "số điện thoại"
                 }
             ],
-            "reponse": "093xxxxxxx"
+            "reponse": "093...."
         },
         {
             "text": "help",
@@ -128,7 +92,7 @@
                     "value": "giúp đỡ"
                 }
             ],
-            "reponse": "bạn cần tư vấn ạ"
+            "reponse": "bạn cần giúp gì "
         },
         {
             "text": "chào shop",
@@ -138,7 +102,7 @@
                     "value": "chào"
                 }
             ],
-            "reponse": "chào b"
+            "reponse": "chào bạn"
         },
         {
             "text": "hello",
@@ -148,7 +112,7 @@
                     "value": "chào"
                 }
             ],
-            "reponse": "chào b"
+            "reponse": "chào bạn"
         },
         {
             "text": "em chào chị",
@@ -158,7 +122,7 @@
                     "value": "chào"
                 }
             ],
-            "reponse": "chào b"
+            "reponse": "chào em"
         },
         {
             "text": "em chào shop",
@@ -168,7 +132,7 @@
                     "value": "chào"
                 }
             ],
-            "reponse": "chào b"
+            "reponse": "chào bạn"
         },
         {
             "text": "This is a test message from the Facebook team. Please respond from your app within 2 days to confirm that the integration is functioning.",
@@ -194,7 +158,7 @@
                     "value": "to confirm"
                 }
             ],
-            "reponse": "Can you speak Vietnames? "
+            "reponse": "Can you speak vietnamese?"
         },
         {
             "text": "cho t xin thêm thông tin về shop",
@@ -212,7 +176,7 @@
                     "value": "về"
                 }
             ],
-            "reponse": "Shop thời trang nữ tại 38 Man thiện Q9 HCM "
+            "reponse": "Gia han house \\naddress 397 man thiện , q9 hcm"
         },
         {
             "text": "xin chào shop cho mình hỏi shop có bán quần áo không ?",
@@ -246,7 +210,7 @@
                     "value": "quần áo"
                 }
             ],
-            "reponse": "Có nhé bạn cần gì"
+            "reponse": "có"
         },
         {
             "text": "áo màu đen nhiêu shop",
@@ -264,7 +228,7 @@
                     "value": "màu đen"
                 }
             ],
-            "reponse": "mẫu nào ạ"
+            "reponse": "299k"
         },
         {
             "text": "shop có người yêu chưa ?",
@@ -282,7 +246,7 @@
                     "value": "người yêu"
                 }
             ],
-            "reponse": "r nhé"
+            "reponse": "r nhé "
         },
         {
             "text": "Còn bán không ?",
@@ -304,7 +268,7 @@
                     "value": "hỏi"
                 }
             ],
-            "reponse": "còn"
+            "reponse": "có"
         },
         {
             "text": "shop có bán quần áo không",
@@ -344,123 +308,7 @@
                     "value": "hỏi"
                 }
             ],
-            "reponse": "quần áo thôi"
-        },
-        {
-            "text": "chào shop có bán đồ không",
-            "entities": [
-                {
-                    "entity": "Verb",
-                    "value": "chào"
-                },
-                {
-                    "entity": "Verb",
-                    "value": "hỏi"
-                },
-                {
-                    "entity": "Verb",
-                    "value": "bán"
-                },
-                {
-                    "entity": "Verb",
-                    "value": "hỏi"
-                }
-            ],
-            "reponse": "có"
-        },
-        {
-            "text": "chào shop có bán quần áo không",
-            "entities": [
-                {
-                    "entity": "Verb",
-                    "value": "chào"
-                },
-                {
-                    "entity": "Verb",
-                    "value": "hỏi"
-                },
-                {
-                    "entity": "Verb",
-                    "value": "bán"
-                },
-                {
-                    "entity": "Verb",
-                    "value": "hỏi"
-                },
-                {
-                    "entity": "Noun",
-                    "value": "quần áo"
-                }
-            ],
-            "reponse": "có"
-        },
-        {
-            "text": "còn bán quần áo không",
-            "entities": [
-                {
-                    "entity": "Adjective",
-                    "value": "còn"
-                },
-                {
-                    "entity": "Verb",
-                    "value": "bán"
-                },
-                {
-                    "entity": "Verb",
-                    "value": "hỏi"
-                },
-                {
-                    "entity": "Noun",
-                    "value": "quần áo"
-                }
-            ],
-            "reponse": "có"
-        },
-        {
-            "text": "uh nè",
-            "entities": [
-                {
-                    "entity": "None",
-                    "value": "uh"
-                }
-            ],
-            "reponse": "vâng'"
-        },
-        {
-            "text": "uh",
-            "entities": [
-                {
-                    "entity": "search_query",
-                    "value": "uh"
-                }
-            ],
-            "reponse": "vâng"
-        },
-        {
-            "text": "có mẫu nào lớn hơn",
-            "entities": [
-                {
-                    "entity": "Verb",
-                    "value": "hỏi"
-                },
-                {
-                    "entity": "Verb",
-                    "value": "hỏi"
-                },
-                {
-                    "entity": "Noun",
-                    "value": "mẫu"
-                },
-                {
-                    "entity": "Adjective",
-                    "value": "rộng"
-                },
-                {
-                    "entity": "Compare_sosanh",
-                    "value": "hơn"
-                }
-            ],
-            "reponse": "để mình xem lại"
+            "reponse": "có "
         },
         {
             "text": "bạn ở đâu",
@@ -474,7 +322,7 @@
                     "value": "hỏi nơi chốn"
                 }
             ],
-            "reponse": "38 Man thiện q9 hcm "
+            "reponse": "387 man thiện ,q9, hcm"
         },
         {
             "text": "giá ship bao nhiêu",
@@ -492,7 +340,7 @@
                     "value": "ship"
                 }
             ],
-            "reponse": "30k"
+            "reponse": "323k"
         },
         {
             "text": "ship mấy ngày tới",
@@ -514,7 +362,7 @@
                     "value": "hỏi số lượng"
                 }
             ],
-            "reponse": "cỡ 3 ngày"
+            "reponse": "2 ngày"
         },
         {
             "text": "có hình thật không",
@@ -536,7 +384,7 @@
                     "value": "thật"
                 }
             ],
-            "reponse": "có"
+            "reponse": "có nhé"
         },
         {
             "text": "rồi khi nào tới",
@@ -550,7 +398,7 @@
                     "value": "tới"
                 }
             ],
-            "reponse": "3 ngày"
+            "reponse": "2 ngày"
         },
         {
             "text": "khi nào ship được",
@@ -590,17 +438,7 @@
                     "value": "đồng nai"
                 }
             ],
-            "reponse": "50k"
-        },
-        {
-            "text": "doraemon",
-            "entities": [
-                {
-                    "entity": "search_query",
-                    "value": "doraemon"
-                }
-            ],
-            "reponse": "sao ạ"
+            "reponse": "40k"
         },
         {
             "text": "introduce",
@@ -610,7 +448,7 @@
                     "value": "sản phẩm"
                 }
             ],
-            "reponse": "I am a Bot in Gia Han Shop \\naddress : 387  Man thiện , Tăng Nhớn Phú A , q9 ,HCM , Việt Nam\\ncontact : 093xxxx ( sr for that test ) \\nI do not good at English if you need more question pls send \"menu\""
+            "reponse": "Im a bot chat at Gia han house lay fashion\\naddress 387 man thiện , q9"
         },
         {
             "text": "where are your shop",
@@ -620,7 +458,7 @@
                     "value": "hỏi ở đâu"
                 }
             ],
-            "reponse": "387 Man Thien , Tang Nhon Phu A, Q9 ,HCM city , VN"
+            "reponse": "387 man thiện , q9"
         },
         {
             "text": "product",
@@ -630,7 +468,7 @@
                     "value": "sản phẩm"
                 }
             ],
-            "reponse": "At present not exit list data"
+            "reponse": "hiện chưa có data"
         },
         {
             "text": "who are you",
@@ -640,7 +478,7 @@
                     "value": "hỏi tên"
                 }
             ],
-            "reponse": "Im a Bot support chat at Gia Han Shop"
+            "reponse": "im a bot in gia hân fashion"
         },
         {
             "text": "menu",
@@ -650,7 +488,7 @@
                     "value": "menu"
                 }
             ],
-            "reponse": "chào bạn\\nxin chào shop cho mình hỏi shop có bán quần áo không\\ncho em xin số điện thoại liên lạc\\ncho t xin thêm thông tin về shop\\nshop có người yêu chưa ?\\nbạn ở đâu\\ngiá ship bao nhiêu\\nintroduce\\nproduct\\nhelp\\ncó khuyến mãi k shop\\nship mấy ngày tới\\nkhi nào ship được"
+            "reponse": "help\\ninfo\\nintroduce\\nbạn ở đâu\\nwhere are your shop\\nkhi nào ship được\\ncó hình thật không\\ngiá ship bao nhiêu"
         },
         {
             "text": "info",
@@ -660,7 +498,57 @@
                     "value": "thông tin"
                 }
             ],
-            "reponse": "Im a Bot at Gia Han shop \\naddress : 387 Man Thien ,  Tang Nhon Phu A , Q9 , Ho Chi Minh city , Vietnam\\ncontact : 093xxxxx ( sr not support for this test)\\nIf you need more choose can send  \"menu\""
+            "reponse": "Im a bot in gia han lady fashion"
+        },
+        {
+            "text": "Hi",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "chào"
+                }
+            ],
+            "reponse": "chào bạn"
+        },
+        {
+            "text": "Info",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "thông tin"
+                }
+            ],
+            "reponse": "im a bot in lady fashion"
+        },
+        {
+            "text": "Help",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "giúp đỡ"
+                }
+            ],
+            "reponse": "bạn cần gì"
+        },
+        {
+            "text": "Cứu giúp",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "giúp đỡ"
+                }
+            ],
+            "reponse": "bạn cần giúp gì"
+        },
+        {
+            "text": "thông tin",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "thông tin"
+                }
+            ],
+            "reponse": "Gia hân lady fashion \\naddress : 387 man thiện ,q9 ,hcm\\ncontact : 093 xxx xxx"
         }
     ]
 }
