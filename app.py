@@ -20,7 +20,7 @@ def verify():
             return "Verification token mismatch", 403
         return request.args["hub.challenge"], 200
 
-    return "Hello worlds", 200
+    return "Success build ", 200
 
 
 @app.route('/', methods=['POST'])
@@ -46,7 +46,7 @@ def webhook():
                         response=get_reponse(message_text)
                     except:
                         response= message_text
-                    send_message(sender_id,response)
+                    send_message(recipient_id,sender_id,response)
 
 
 
@@ -62,7 +62,7 @@ def webhook():
     return "ok", 200
 
 
-def send_message(recipient_id, message_text):
+def send_message(sender_id,recipient_id, message_text):
 
     log("\nSEND: {sender_id} [Me]  o>>> {recipient} :   {text}".format(sender_id=sender_id,recipient=recipient_id, text=message_text))
 
