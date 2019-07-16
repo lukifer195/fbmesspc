@@ -42,7 +42,7 @@ def webhook():
                     message_text = messaging_event["message"]["text"]  # the message's text
                     log("\nRECEIVE: {sender_id}  o>>> {recipient} [Me] :   {text}".format(sender_id=sender_id,recipient=recipient_id, text=message_text))
                     try:
-                        response=get_reponse(message_text)
+                        response= get_reponse(message_text)
                     except:
                         response= get_reponse(message_text)
                     send_message(recipient_id,sender_id,response)
@@ -63,7 +63,7 @@ def webhook():
 
 def send_message(sender_id,recipient_id, message_text):
 
-    log("SEND: {sender_id} [Me]  o>>> {recipient} :   {text}".format(sender_id=sender_id,recipient=recipient_id, text=message_text))
+    log("\nSEND: {sender_id} [Me]  o>>> {recipient} :   {text}".format(sender_id=sender_id,recipient=recipient_id, text=message_text))
 
     params = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
