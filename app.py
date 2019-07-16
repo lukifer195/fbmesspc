@@ -29,37 +29,39 @@ def webhook():
 
     data = request.get_json()
 #     log(data)  # you may not want to log every incoming message in production, but it's good for testing
+    try:
+        if data["object"] == "page":
 
-    if data["object"] == "page":
+            for entry in data["entry"]:
+                for messaging_event in entry["messaging"]:
 
-        for entry in data["entry"]:
-            for messaging_event in entry["messaging"]:
+                    if messaging_event.get("message"):  # someone sent us a message
 
-                if messaging_event.get("message"):  # someone sent us a message
-
-                    sender_id = messaging_event["sender"]["id"]        # the facebook ID of the person sending you the message
-                    recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
-                    message_text = messaging_event["message"]["text"]  # the message's text
-                    log("\nRECEIVE: {sender_id}  o>>> {recipient} [Me] :   {text}".format(sender_id=sender_id,recipient=recipient_id, text=message_text))
-                    try:
-                        response= get_reponse(message_text)
-                    except:
-                        response= get_reponse(message_text)
-                    send_message(recipient_id,sender_id,response)
+                        sender_id = messaging_event["sender"]["id"]        # the facebook ID of the person sending you the message
+                        recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
+                        message_text = messaging_event["message"]["text"]  # the message's text
+                        log("\nRECEIVE: {sender_id}  o>>> {recipient} [Me] :   {text}".format(sender_id=sender_id,recipient=recipient_id, text=message_text))
+                        try:
+                            response= get_reponse(message_text)
+                        except:
+                            response= get_reponse(message_text)
+                        send_message(recipient_id,sender_id,response)
 
 
 
-                if messaging_event.get("delivery"):  # delivery confirmation
-                    pass
+                    if messaging_event.get("delivery"):  # delivery confirmation
+                        pass
 
-                if messaging_event.get("optin"):  # optin confirmation
-                    pass
+                    if messaging_event.get("optin"):  # optin confirmation
+                        pass
 
-                if messaging_event.get("postback"):  # user clicked/tapped "postback" button in earlier message
-                    pass
+                    if messaging_event.get("postback"):  # user clicked/tapped "postback" button in earlier message
+                        pass
 
-    return "ok", 200
-
+        return "ok", 200
+    except KeyError as e:
+        log(e)
+        
 
 def send_message(sender_id,recipient_id, message_text):
 
@@ -67,7 +69,6 @@ def send_message(sender_id,recipient_id, message_text):
 
     params = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
-        # "access_token": "EAAL4VfjZBoG8BAB8gB3u61AZAQ3Lx3H75m8gizvZAtaAUWpwenoLk7hjOBtNPLwkmGUbdVvg4wGHke6RpITVwWETrcnFYanZAMgYpp5SjtOEe3LjtYpgkZB2tZCqZCSGcWNeawKXNY8ZAW0d8psGCabf1wEt93mFnbzmFfyrzlouAxOZCuD4MknN5ZANnZCUEYQaZCwZD"
     }
     headers = {
         "Content-Type": "application/json"
