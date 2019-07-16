@@ -29,14 +29,13 @@ def run(message_text = 'Hello world '):
     # print(data)
     keylist = []
     list_reponse = []
-    for key in list_keywords:                 # trượt key trong list keys
-        Keyword = tuple(key.items())    # convert tuple cho tất cả item trong key
+    for key in list_keywords:                   # trượt key trong list keys
+        Keyword = tuple(key.items())            # convert tuple cho tất cả item trong key
         keylist.append(Keyword)             
     keyset = set(keylist)   
-    count = 0
 
     if len(keyset) == 0:
-        return "Hân hạnh giải đáp thắc mắc của bạn"
+        return "Bạn cần tư vấn gì "
     if len(keyset) == 1:
         for datalist in export.get('data'):
             entities_list = (datalist.get('entities'))
@@ -48,11 +47,11 @@ def run(message_text = 'Hello world '):
             diff = keyset ^ entity_set                          # ^ tìm thực thể (tuple) khác nhau giữa 2 set
             lendiff = len(diff)
             if lendiff == 0 :                                   # chạy len(diff) để tìm câu thiếu hoặc dư 1-4 thực thể
-#                 print("KEYSET    :  ",keyset        )
-#                 print("ENTITY_SET:  ",entity_set    )
-#                 print(datalist.get('text')          )
-#                 print("DIFF      :  ",diff          )
-#                 print("lendiff   :  ",lendiff       )
+                print("KEYSET    :  ",keyset        )
+                print("ENTITY_SET:  ",entity_set    )
+                print(datalist.get('text')          )
+                print("DIFF      :  ",diff          )
+                print("lendiff   :  ",lendiff       )
                 return datalist.get('reponse')
             else:
                 pass
@@ -68,9 +67,14 @@ def run(message_text = 'Hello world '):
                 diff = keyset ^ entity_set                          # ^ tìm thực thể (tuple) khác nhau giữa 2 set
                 lendiff = len(diff)
                 if lendiff == x :                                   # chạy len(diff) để tìm câu thiếu hoặc dư 1-4 thực thể
-#                     print("DIFF      :  ",diff          )
-                    return datalist.get('reponse')
-                    # if datalist.get('reponse') != None:
+                    print("KEYSET    :  ",keyset        )
+                    print("ENTITY_SET:  ",entity_set    )
+                    print(datalist.get('text')          )
+                    print("DIFF      :  ",diff          )
+                    print("lendiff   :  ",lendiff       )
+                    import os
+                    path_here  = os.getcwd()           
+                    return datalist.get('reponse') , path_here
 
 def get_reponse(message_text):
     a= run(message_text)
