@@ -1,7 +1,7 @@
 import os
 import sys
 import json
-from datetime import datetime
+import datetime
 
 import requests
 from flask import Flask, request
@@ -41,8 +41,7 @@ def webhook():
                     sender_id = messaging_event["sender"]["id"]        # the facebook ID of the person sending you the message
                     recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                     message_text = messaging_event["message"]["text"]  # the message's text
-#                     log("<> Receive message  o>>> {sender_id}  :  {message_text}".format(sender_id=sender_id, message_text=message_text))
-
+                    log("\nRECEIVE: {sender_id}  o>>> {recipient} [Me] :   {text}".format(sender_id=sender_id,recipient=recipient_id, text=message_text))
                     try:
                         response=get_reponse(message_text)
                     except:
@@ -65,7 +64,7 @@ def webhook():
 
 def send_message(recipient_id, message_text):
 
-#     log(" Sending message  o>>> {recipient}   :   {text}".format(recipient=recipient_id, text=message_text))
+    log("\nSEND: {sender_id} [Me]  o>>> {recipient} :   {text}".format(sender_id=sender_id,recipient=recipient_id, text=message_text))
 
     params = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
@@ -94,7 +93,7 @@ def log(msg, *args, **kwargs):  # simple wrapper for logging to stdout on heroku
             msg = json.dumps(msg)
         else:
             msg = str(msg).format(*args, **kwargs)
-        print("{} Logging: {}".format(datetime.now(), msg))
+        print("\n{} : {}".format(datetime.datetime.now()+datetime.timedelta(hours = 7), msg))
     except UnicodeEncodeError:
         pass  # squash logging errors in case of non-ascii text
     sys.stdout.flush()
