@@ -6,7 +6,7 @@ from wit import Wit
 def run(message_text = 'Hello world '):
     #gửi lên wit tìm nhận dạng
     appID = "2312110155545084"
-    ServerAccessToken = "STSHBSEWET4OGR3WUA5Y2UZLGB42KHVP"
+    ServerAccessToken = os.environ["WIT_SERVER"]
     client = Wit(ServerAccessToken)
     data = client.message(message_text)
 
