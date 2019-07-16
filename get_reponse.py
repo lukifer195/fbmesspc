@@ -1,6 +1,6 @@
 import json
 from wit import Wit
-
+import os
 
 
 def run(message_text = 'Hello world '):
