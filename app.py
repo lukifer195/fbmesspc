@@ -54,7 +54,7 @@ def webhook():
                     if messaging_event.get("optin"):  # optin confirmation
                         log('Đã optin')
                     if messaging_event.get("postback"):  # user clicked/tapped "postback" button in earlier message
-                        log('Đã postback)
+                        log('Đã postback')
 
         return "ok", 200
     except KeyError, TypeError:
