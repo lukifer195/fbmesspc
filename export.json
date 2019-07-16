@@ -488,7 +488,7 @@
                     "value": "menu"
                 }
             ],
-            "reponse": "help\\ninfo\\nintroduce\\nbạn ở đâu\\nwhere are your shop\\nkhi nào ship được\\ncó hình thật không\\ngiá ship bao nhiêu"
+            "reponse": "help \n info \u000A introduce \\u000A bạn ở đâu\\nwhere are your shop\\nkhi nào ship được\\ncó hình thật không\\ngiá ship bao nhiêu"
         },
         {
             "text": "info",
