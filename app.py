@@ -50,17 +50,15 @@ def webhook():
 
 
                     if messaging_event.get("delivery"):  # delivery confirmation
-                        pass
-
+                        log('Đã xem')
                     if messaging_event.get("optin"):  # optin confirmation
-                        pass
-
+                        log('Đã optin')
                     if messaging_event.get("postback"):  # user clicked/tapped "postback" button in earlier message
-                        pass
+                        log('Đã postback)
 
         return "ok", 200
-    except KeyError as e:
-        log(e)
+    except KeyError, TypeError:
+        log("Not Found ..........." + e)
         
 
 def send_message(sender_id,recipient_id, message_text):
