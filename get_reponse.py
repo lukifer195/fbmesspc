@@ -5,9 +5,6 @@ from wit import Wit
 
 def run(message_text = 'Hello world '):
     #gửi lên wit tìm nhận dạng
-    import os
-    path_here  = os.getcwd()  
-    print(path_here)
     appID = "2319282591495108"
     ServerAccessToken = os.environ["WIT_SERVER"]
     client = Wit(ServerAccessToken)
@@ -52,9 +49,9 @@ def run(message_text = 'Hello world '):
             if lendiff == 0 :                                   # chạy len(diff) để tìm câu thiếu hoặc dư 1-4 thực thể
                 print("KEYSET    :  ",keyset        )
                 print("ENTITY_SET:  ",entity_set    )
-                print(datalist.get('text')          )
                 print("DIFF      :  ",diff          )
-                print("lendiff   :  ",lendiff       )
+                print(datalist.get('text')          )
+
                 return datalist.get('reponse')
             else:
                 pass
@@ -72,9 +69,8 @@ def run(message_text = 'Hello world '):
                 if lendiff == x :                                   # chạy len(diff) để tìm câu thiếu hoặc dư 1-4 thực thể
                     print("KEYSET    :  ",keyset        )
                     print("ENTITY_SET:  ",entity_set    )
+                    print("DIFF      :  ",diff          )                    
                     print(datalist.get('text')          )
-                    print("DIFF      :  ",diff          )
-                    print("lendiff   :  ",lendiff       )
                     return datalist.get('reponse') 
 
 def get_reponse(message_text):
