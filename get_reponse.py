@@ -5,6 +5,9 @@ from wit import Wit
 
 def run(message_text = 'Hello world '):
     #gửi lên wit tìm nhận dạng
+    import os
+    path_here  = os.getcwd()  
+    print(path_here)
     appID = "2319282591495108"
     ServerAccessToken = os.environ["WIT_SERVER"]
     client = Wit(ServerAccessToken)
@@ -72,9 +75,7 @@ def run(message_text = 'Hello world '):
                     print(datalist.get('text')          )
                     print("DIFF      :  ",diff          )
                     print("lendiff   :  ",lendiff       )
-                    import os
-                    path_here  = os.getcwd()           
-                    return datalist.get('reponse') , path_here
+                    return datalist.get('reponse') 
 
 def get_reponse(message_text):
     a= run(message_text)
