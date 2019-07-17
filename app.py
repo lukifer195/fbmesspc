@@ -57,7 +57,7 @@ def webhook():
                         log('Đã postback')
 
         return "ok", 200
-    except KeyError, TypeError:
+    except (KeyError, TypeError) as e:
         log("Not Found ..........." + e)
         
 
