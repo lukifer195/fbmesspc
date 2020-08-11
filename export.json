@@ -1,0 +1,554 @@
+{
+    "data": [
+        {
+            "text": "chị có mẫu nào lớn hơn không",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "mẫu"
+                },
+                {
+                    "entity": "Adjective",
+                    "value": "rộng"
+                },
+                {
+                    "entity": "Compare_sosanh",
+                    "value": "hơn"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                }
+            ],
+            "reponse": "có nhé em"
+        },
+        {
+            "text": "có khuyến mãi k shop",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Noun",
+                    "value": "khuyến mãi"
+                }
+            ],
+            "reponse": "hom nay không khuyến mãi"
+        },
+        {
+            "text": "đang khuyến mãi mẫu nào v shop",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "khuyến mãi"
+                },
+                {
+                    "entity": "Noun",
+                    "value": "mẫu"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                }
+            ],
+            "reponse": "liên hệ trực tiếp "
+        },
+        {
+            "text": "chị cho em xin số điện thoại liên lạc",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "muốn"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "liên lạc"
+                },
+                {
+                    "entity": "Noun",
+                    "value": "số điện thoại"
+                }
+            ],
+            "reponse": "093...."
+        },
+        {
+            "text": "help",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "giúp đỡ"
+                }
+            ],
+            "reponse": "bạn cần giúp gì "
+        },
+        {
+            "text": "chào shop",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "chào"
+                }
+            ],
+            "reponse": "chào bạn"
+        },
+        {
+            "text": "hello",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "chào"
+                }
+            ],
+            "reponse": "chào bạn"
+        },
+        {
+            "text": "em chào chị",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "chào"
+                }
+            ],
+            "reponse": "chào em"
+        },
+        {
+            "text": "em chào shop",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "chào"
+                }
+            ],
+            "reponse": "chào bạn"
+        },
+        {
+            "text": "This is a test message from the Facebook team. Please respond from your app within 2 days to confirm that the integration is functioning.",
+            "entities": [
+                {
+                    "entity": "english",
+                    "value": "This is a"
+                },
+                {
+                    "entity": "english",
+                    "value": "message from"
+                },
+                {
+                    "entity": "english",
+                    "value": "Facebook team"
+                },
+                {
+                    "entity": "english",
+                    "value": "Please respond"
+                },
+                {
+                    "entity": "english",
+                    "value": "to confirm"
+                }
+            ],
+            "reponse": "Can you speak vietnamese?"
+        },
+        {
+            "text": "cho t xin thêm thông tin về shop",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "muốn"
+                },
+                {
+                    "entity": "Noun",
+                    "value": "thông tin"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "về"
+                }
+            ],
+            "reponse": "Gia han house \\naddress 397 man thiện , q9 hcm"
+        },
+        {
+            "text": "xin chào shop cho mình hỏi shop có bán quần áo không ?",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "muốn"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "chào"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "bán"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Noun",
+                    "value": "quần áo"
+                }
+            ],
+            "reponse": "có"
+        },
+        {
+            "text": "áo màu đen nhiêu shop",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "quần áo"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "nhiêu"
+                },
+                {
+                    "entity": "Adjective",
+                    "value": "màu đen"
+                }
+            ],
+            "reponse": "299k"
+        },
+        {
+            "text": "shop có người yêu chưa ?",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Noun",
+                    "value": "người yêu"
+                }
+            ],
+            "reponse": "r nhé "
+        },
+        {
+            "text": "Còn bán không ?",
+            "entities": [
+                {
+                    "entity": "Adjective",
+                    "value": "còn"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "bán"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                }
+            ],
+            "reponse": "có"
+        },
+        {
+            "text": "shop có bán quần áo không",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "bán"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Noun",
+                    "value": "quần áo"
+                }
+            ],
+            "reponse": "có "
+        },
+        {
+            "text": "shop có bán đồ không",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "bán"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                }
+            ],
+            "reponse": "có "
+        },
+        {
+            "text": "bạn ở đâu",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "ở"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi nơi chốn"
+                }
+            ],
+            "reponse": "387 man thiện ,q9, hcm"
+        },
+        {
+            "text": "giá ship bao nhiêu",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "giá"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Noun",
+                    "value": "ship"
+                }
+            ],
+            "reponse": "323k"
+        },
+        {
+            "text": "ship mấy ngày tới",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "ship"
+                },
+                {
+                    "entity": "Noun",
+                    "value": "ngày"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "tới"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi số lượng"
+                }
+            ],
+            "reponse": "2 ngày"
+        },
+        {
+            "text": "có hình thật không",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Noun",
+                    "value": "hình"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "hỏi"
+                },
+                {
+                    "entity": "Adjective",
+                    "value": "thật"
+                }
+            ],
+            "reponse": "có nhé"
+        },
+        {
+            "text": "rồi khi nào tới",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "hỏi thời gian"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "tới"
+                }
+            ],
+            "reponse": "2 ngày"
+        },
+        {
+            "text": "khi nào ship được",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "hỏi thời gian"
+                },
+                {
+                    "entity": "Noun",
+                    "value": "ship"
+                }
+            ],
+            "reponse": "trong ngày"
+        },
+        {
+            "text": "ship tới đồng nai hết nhiêu",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "ship"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "tới"
+                },
+                {
+                    "entity": "Adjective",
+                    "value": "hết"
+                },
+                {
+                    "entity": "Verb",
+                    "value": "nhiêu"
+                },
+                {
+                    "entity": "location",
+                    "value": "đồng nai"
+                }
+            ],
+            "reponse": "40k"
+        },
+        {
+            "text": "introduce",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "sản phẩm"
+                }
+            ],
+            "reponse": "Im a bot chat at Gia han house lay fashion\\naddress 387 man thiện , q9"
+        },
+        {
+            "text": "where are your shop",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "hỏi ở đâu"
+                }
+            ],
+            "reponse": "387 man thiện , q9"
+        },
+        {
+            "text": "product",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "sản phẩm"
+                }
+            ],
+            "reponse": "hiện chưa có data"
+        },
+        {
+            "text": "who are you",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "hỏi tên"
+                }
+            ],
+            "reponse": "im a bot in gia hân fashion"
+        },
+        {
+            "text": "menu",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "menu"
+                }
+            ],
+            "reponse": "help \n info \u000A introduce \\u000A bạn ở đâu\\nwhere are your shop\\nkhi nào ship được\\ncó hình thật không\\ngiá ship bao nhiêu"
+        },
+        {
+            "text": "info",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "thông tin"
+                }
+            ],
+            "reponse": "Im a bot in gia han lady fashion"
+        },
+        {
+            "text": "Hi",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "chào"
+                }
+            ],
+            "reponse": "chào bạn"
+        },
+        {
+            "text": "Info",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "thông tin"
+                }
+            ],
+            "reponse": "im a bot in lady fashion"
+        },
+        {
+            "text": "Help",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "giúp đỡ"
+                }
+            ],
+            "reponse": "bạn cần gì"
+        },
+        {
+            "text": "Cứu giúp",
+            "entities": [
+                {
+                    "entity": "Verb",
+                    "value": "giúp đỡ"
+                }
+            ],
+            "reponse": "bạn cần giúp gì"
+        },
+        {
+            "text": "thông tin",
+            "entities": [
+                {
+                    "entity": "Noun",
+                    "value": "thông tin"
+                }
+            ],
+            "reponse": "Gia hân lady fashion \\naddress : 387 man thiện ,q9 ,hcm\\ncontact : 093 xxx xxx"
+        }
+    ]
+}
