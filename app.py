@@ -36,7 +36,7 @@ def webhook():
     # endpoint for processing incoming messaging events
 
     data = request.get_json()
-    # log(data)  # you may not want to log every incoming message in production, but it's good for testing
+    log(data)                    # you may not want to log every incoming message in production, but it's good for testing
 
     # data_có mess = {"object":"page", 
     #                     "entry": [{ "id": "2517603138253655", "time": 1564197467552, 
@@ -106,8 +106,6 @@ def send_message(sender_id,recipient_id, message_text):
                 "text": message_text
             }
         })
-        # https://graph.facebook.com/v2.6/me/messages
-        
         r = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
         if r.status_code != 200:
             log(r.status_code)
